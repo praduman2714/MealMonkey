@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MealMonkey</title>
+</head>
+<body>
+    <!-- The below code is for the navBar
+    I have enclosed all the things, in div because it would be easy for me give the display of flex -->
+    <nav class="navBar">
+        <div class="leftSide">
+           <div class="image">
+            <a href="index.html">
+                <img src="asset/mealMonkey.png">
+            </a>
+           </div>
+            <div class="heading">
+                <h3>MealMonkey</h3>
+            </div>
+        </div>
+        
+        <div class="sideDrawer">
+
+            <div id="toggle-sidebar">
+                <i class="fa-solid fa-bars"></i>
+                <span id="total-counter">0</span>
+            </div>
+        </div>
+
+    </nav>
+
+
+    <main>
+        <div id="sideBar">
+            <div class="smallHeading">
+                Favourites
+            </div>
+            <div class="underline"></div>
+            <!-- <div s"></div> -->
+            <div id="fav">
+                <!-- <div class="favItems">
+                    <div class="favItemsPhotos">
+                        <img src="Asset/burger.jfif">
+                    </div>
+                    <div class="favItemDetails">
+                        <div class="favItemName">
+                            <strong>Name: </strong>
+                            <span class="fav-item-text">
+                                Chicken
+                            </span>
+                        </div>
+                        <div id="fav-like-button">
+                            Add or Remove
+                        </div>
+                    </div>
+
+
+                </div> -->
+
+                
+            </div>
+        </div>
+
+        <div id="flexBox">
+            <div class="searchBarDiv">
+                <!-- Quotes -->
+                <h2 class = "title">Find Meals For Your Ingredients</h2>
+                <blockquote>Food are not made with ingredients; but it is made out of love.<br>
+                <cite>- Praduman Singh</cite>
+                </blockquote>
+                <!-- input id="searchBar" type="search" placeholder="Enter the meal, reciep" > -->
+            
+                <input id="searchBar" type="search" placeholder="Enter the meal, reciep" >
+            </div>
+
+
+            <!-- <div class="itemDetails">
+                <div class="itemLeftDetails">
+                    <img src="Asset/burger.jfif">
+                </div>
+                <div class="itemRightDetails">
+
+                    <div class="item-name">
+                        <strong>Name: </strong>
+                        <span class="item-text">
+                            Burger
+                        </span>
+                     </div>
+
+                     <div class="itemCatogery">
+                        <strong>Category</strong>
+                        <span class="item-text">
+                            Burger
+                        </span>
+                     </div>
+
+                     <div class="item-ingrident">
+                        <strong>Ingrident: </strong>
+                        <span class="item-text">
+                            Let You know
+                        </span>
+                    </div>
+
+                    <div class="item-instruction">
+                        <strong>Instructions: </strong>
+                        <span class="item-text">
+                            Telling
+                        </span>
+                    </div>
+
+                    <div class="item-video">
+                        <strong>Video Link</strong>
+                        <span class="item-text">
+                            Sending..
+                        </span>
+                    </div>
+
+                </div>
+            </div> -->
+
+            <div id="cardHolder">
+                <!-- <div class="card">
+                    <div class="card-top">
+                        <div class="dish-photo">
+                            <img src="${element.strMealThumb}" alt="">
+                        </div>
+                        <div class="dish-name">
+                            ${element.strMeal}
+                        </div>
+                        <div class="dish-details">
+                            ${truncate(element.strInstructions,50)}
+                            <a href="${element.strInstructions}">
+                                <span href="#" class="button">Know More</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="like">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="play">
+                            <a href="${element.strYoutube}">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </main>
+
+
+    <script src="meal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c134635d22.js" crossorigin="anonymous"></script>
+</body>
+</html>
