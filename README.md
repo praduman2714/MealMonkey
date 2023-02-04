@@ -31,5 +31,13 @@ Link for the website : https://praduman2714.github.io/MealMonkey/
      - showFavMealList() {It will show the favMeal }   
 
 
-Photo
+- Photo of the Home Page
 ![MealMonkeySS1](https://user-images.githubusercontent.com/66240716/216784537-5e76ed05-37b5-4f9c-aeb9-f8c09c70e961.png)
+
+- Photo of meal loaded
+![MealMonkeySS2](https://user-images.githubusercontent.com/66240716/216784830-2418009a-34cb-45d5-9d0b-80953978b8c1.png)
+
+- Photo with fav Bar
+
+![MealMonkeySS3](https://user-images.githubusercontent.com/66240716/216784849-dc1441c6-8ec7-4cfb-9383-fa7f645932b2.png)
+
