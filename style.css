@@ -238,9 +238,20 @@ main{
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 75px;
+    margin-left: 15px;
     padding: 0 10px;
 }
-
+/* .headingRelatedItem{
+    width: 100%;
+     margin-top: -400px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 25px;
+    font-family: monospace;
+    color: black;
+} */
 .card{
     margin: 5px;
     height: 350px;
@@ -516,9 +527,4 @@ a:visited{
 *::-webkit-scrollbar-thumb:hover {
     background: hsl(233, 14%, 35%)
 }
-
-
-
-
-/* Media */
 

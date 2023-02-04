@@ -1,6 +1,6 @@
 
 document.addEventListener('load' , ()=>{
-    updateTask();
+    counter();
 })
 
 
@@ -23,16 +23,15 @@ if(localStorage.getItem(dbFavList) == null){
     localStorage.setItem(dbFavList, JSON.stringify([]));
 }
 
-function updateTask() {
-    const favCounter = document.getElementById('total-counter');
-    const db = JSON.parse(localStorage.getItem(dbFavList));
-    if (favCounter.innerText != null) {
-        favCounter.innerText = db.length;
-    }
+// It will update the totale counter of the dbFavList
+// function updateTask() {
+//     const favCounter = document.getElementById('total-counter');
+//     const db = JSON.parse(localStorage.getItem(dbFavList));
+//     if (favCounter.innerText != null) {
+//         favCounter.innerText = db.length;
+//     }
 
-}
-
-// Check for the favourite meal counter
+// }
 
 function counter(){
     const favCounter = document.getElementById('total-counter');
@@ -62,7 +61,7 @@ function isFav(list, id) {
 
 /**
  * Generates a random character string starting 
- * @returns {string} The generated string
+ *  The generated string
  */
 function generateOneCharString() {
     var possible = "abcdefghijklmnopqrstuvwxyz";
@@ -126,7 +125,7 @@ function toggleFavourites(id){
 
     showMealList();
     showFavMealList();
-    updateTask();
+    counter();
 
 }
 
@@ -160,11 +159,12 @@ async function showMealList() {
     const url = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
     const mealsData = await fetchMealsFromApi(url, inputValue);
     let html = '';
+    // document.getElementById('cardHolder').innerHTML = html;
     if (mealsData.meals) {
         html = mealsData.meals.map(element => {
 
             return `
-         
+            
             <div class="card">
             <div class="card-top"  onclick="showMealDetails(${element.idMeal}, '${inputValue}')">
                 <div class="dish-photo" >
@@ -354,4 +354,4 @@ async function showFavMealList() {
 searchBar.addEventListener('keyup', handleInput);
 toggleButton.addEventListener('click', showOrHideFavMenu);
 flexBox.addEventListener('onscroll', scrollFunction);
-updateTask();
+counter();
