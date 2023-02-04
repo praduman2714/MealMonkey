@@ -197,7 +197,7 @@ async function showMealList() {
         document.getElementById('cardHolder').innerHTML = html;
     }
 }
-
+//  This fucntion will show the Details of the selected meal.
 
 async function showMealDetails(itemId, searchInput) {
     //console.log("searchInput:...............", searchInput);

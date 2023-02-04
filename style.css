@@ -82,7 +82,7 @@ body{
     border: 1px hsl(233, 14%, 35%) solid;
 }
 
-/* Search Bar */
+/* Search Bar and its's element*/
 
 .searchBarDiv{
     margin: 15vh;
@@ -107,8 +107,11 @@ body{
     border: none;
     box-shadow: 0px 0px 0px 2px #ccc;
 }
-/* Main part of the webPage */
 
+
+/* Main part of the webPage */
+/* Main part consist of two part the first being of sideBar, in which favourites is shown
+and the second being the flexBox in which I have stored the ItemDescription */
 main{
     display: flex;
     flex-direction: row-reverse;
@@ -116,6 +119,7 @@ main{
     height: 100vh;
     
 }
+/* The first part of the main, which is going to store the the desired result */
 #flexBox{
     flex : 1;
     display: flex;
@@ -123,7 +127,7 @@ main{
     overflow-y: scroll;
     scroll-behavior: smooth;
 }
-
+/* This is the second part of the main , which is goingh to store the favMeal */
 #sideBar {
     display: flex;
     flex: .2;
@@ -137,17 +141,18 @@ main{
     max-width: 500px;
     /* display: none; */
 }
-
+/* It will be showed after toggling the the hamburger it will be showen in the screen */
 #sideBar.show {
     display: flex;
     transition: all ease-in-out .25s;
 
 }
-
+/* It will decrease the widt, and will give some space to sideBar */
 #flexBox.shrink {
     flex: .8;
     transition: all ease-in-out .25s;
 }
+/* Heading n the sideBar */
 .smallHeading{
     margin-bottom: 5px;
     font-family: monospace;
@@ -162,7 +167,7 @@ main{
 }
 
 
-
+/* From here onwards, the css of favMeal is there */
 #fav{
     display: flex;
     flex-direction: column;
@@ -230,6 +235,8 @@ main{
     text-decoration: none;
 }
 
+
+/* From here onwards, the css of related meal is there */
 #cardHolder{
     width: 90%;
     height: 100vh;
@@ -405,8 +412,6 @@ main{
 
 }
 
-.itemLeftDetails {}
-
 .itemLeftDetails img {
     height: 250px;
     max-width: 250px;
@@ -447,7 +452,7 @@ main{
 }
 
 .item-text {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: cursive;
     font-style: italic;
     color: hsl(235, 23%, 79%);
 }
@@ -473,7 +478,7 @@ main{
     align-items: center;
 }
 
-
+/* These are the css off like button which are present in the card */
 #like-button {
 
     height: 40px;
@@ -493,7 +498,7 @@ main{
 }
 
 
-
+/* From here onwards , I have handled some of the default behaviour which are provided by the html */
 
 a{
     text-decoration: none;
