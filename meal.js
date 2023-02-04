@@ -214,8 +214,8 @@ async function showMealDetails(itemId, searchInput) {
         <div class="searchBarDiv remove-top-margin">
             
             <h2 class = "title">Find Meals For Your Ingredients</h2>
-            <blockquote>Real food doesn't have ingredients, real food is ingredients.<br>
-            <cite>- Jamie Oliver</cite>
+            <blockquote>Food are not made with ingredients; instead it is made out of love.<br>
+                <cite>- Praduman Singh</cite>
             </blockquote>
             <input id="searchBar" onkeypress="handleInput(event)" type="search" placeholder="Enter the meal, reciep" >
             
