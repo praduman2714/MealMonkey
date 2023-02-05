@@ -1,3 +1,25 @@
+@media screen and (max-width : 880px) {
+    .searchBarDiv{
+        margin: 1vh;
+    }
+    #searchBar{
+        width: 100%;
+    }
+    #sideBar.show{
+        display: flex;
+        justify-content: center;
+    }
+    #fav{
+        display: flex;
+        /* justify-content: center; */
+        /* width: 70%; */
+    }
+    .favItems{
+        width: 80%;
+        justify-content: center;
+    }
+}
+
 @media screen and (max-width: 728px) {
     main{
         display: flex;
@@ -22,9 +44,7 @@
     .searchBarDiv{
         margin: 0px;
     }
-    #searchBar{
-        width: 100%;
-    }
+    
 }
 
 @media screen and (max-width : 545px) {
