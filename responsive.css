@@ -1,0 +1,36 @@
+@media screen and (max-width: 728px) {
+    main{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #sideBar{
+        display: flex;
+        display: none;
+        min-width: 100%;
+        flex: 1;
+    }
+    #sideBar.show{
+        display: flex;
+        width: 100%;
+        transition: all ease-in-out .25s;
+    }
+
+    #flexBox.shrink {
+        flex: .8;
+        transition: all ease-in-out .25s;
+    }
+    .searchBarDiv{
+        margin: 0px;
+    }
+    #searchBar{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width : 545px) {
+    #cardHolder{
+        width: 100%;
+        display:flex;
+        justify-content: center;
+    }
+}
